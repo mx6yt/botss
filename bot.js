@@ -140,7 +140,6 @@ client.on('message',async message => {  //ABN I『[м][x] [6]』
   - \`${prefix}clan decline\`: لرفض شخص وعم جعل الشخص يدخل الكلان ( يطلب صلاحية الادمن ) ء
   - \`${prefix}clan room\`: لعمل روم شات او كتابي بأسم الكلان ( صاحب الكلان فقط ) ء`)
   .setFooter(message.author.username, message.author.avatarURL);  //ABN I『[м][x] [6]』
-  message.channel.send(embed);
 }
  
     if(args[1] && args[1] === 'create') {  //ABN I『[м][x] [6]』
