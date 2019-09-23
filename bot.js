@@ -234,7 +234,6 @@ client.on('message',async message => {  //ABN I『[м][x] [6]』
         embed.addField('» عدد التقديمات للكلان', clans[clan].applylist.length, true);  //ABN I『[м][x] [6]』
         embed.addField('» عدد الادمنية بالكلان', clans[clan].admins.length, true);  //ABN I『[м][x] [6]』
         embed.addField('» اعضاء الكلان', `${prefix}clan list || يظهرلك رسالة بها اعضاء الكلان`);  //ABN I『[м][x] [6]』
-      message.channel.send(embed);  //ABN I『[м][x] [6]』
  
     }
     if(args[1] && args[1] === 'join') {  //ABN I『[м][x] [6]』  //ABN I『[м][x] [6]』
@@ -386,7 +385,6 @@ client.on('message',async message => {  //ABN I『[м][x] [6]』
       embed.addField('# Admins', admins.map(r => `\`${o++}.\` **|| <@${r}>**`).join('\n') || `\`1.\` **|| None**`, true);
       embed.addField('# Apply', applylist.map(r => `\`${o++}.\` **|| <@${r}>**`).join('\n') || `\`1.\` **|| None**`, true);
       embed.addField('# Owner', `\`1.\` **|| <@${clan.creator}>**`, true);
-      message.channel.send(embed);
     }
     if(args[1] && args[1] === 'leave') {
       if(system[author.id].clan === 'None') return message.channel.send("**# يجب ان تكون بكلان لأستخدام هذا الأمر**");
@@ -2020,7 +2018,6 @@ client.on('message' , message => {
        .setFooter("ScriptBot | System")
                                                   
   
-  message.channel.send(embed);
   
   
   }
@@ -3072,7 +3069,6 @@ client.on('message' , message => {
   .setTitle(`${client.guilds.size}سيرفرات `)
   .setDescription(`${msg}`)
   .setColor("#ebf442");
-  message.channel.send(embed);
 }
 });
   
