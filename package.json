@@ -9,7 +9,7 @@
     "discord.js": "^11.3.2",
     "ffmpeg": "^0.0.4",
     "ffmpeg-binaries": "^4.0.0",
-    "figlet": "^1.2.1",
+    "figlet": "^1.11.3",
     "fs": "0.0.1-security",
     "get-youtube-id": "^1.0.0",
     "gif-search": "^2.0.1",
